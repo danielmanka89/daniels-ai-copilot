@@ -105,23 +105,29 @@ This is not a demo. This is a production-architecture solution to one of the mos
 **Time Spent:** 130 minutes
 
 **Status:** DONE
-**What I Built:**
+
+**WHAT I BUILT:**
 - Project folder structure (src, data, app, tests, models, logs, screenshots)
 - requirements.txt with 7 packages
 - Python 3.11 environment
 - Screenshot organization (Phase00-07)
 
-**Screenshots:**
+**SCREENSHOTS:**
+
 ![Phase0-1](screenshots/Phase00/Phase00_01_folders.png)
+
 *Folder structure*
 
 ![Phase0-2](screenshots/Phase00/Phase00_02_requirements.png)
+
 *Requirements file*
 
 ![Phase0-3](screenshots/Phase00/Phase00_03_install.png)
+
 *Installed packages*
 
 ![Phase0-4](screenshots/Phase00/Phase00_04_test.png)
+
 *Package test success*
 
 **Key Learning:** Python 3.13 is too new for pandas. Used Python 3.11 for compatibility.
@@ -130,61 +136,70 @@ This is not a demo. This is a production-architecture solution to one of the mos
 
 ### Phase 1: Data Foundation (COMPLETE)
 
-**Time Spent:** 
->>> Phase 1A: 90 minutes
->>> Phase 1B: 45 minutes
+**TIME SPENT:** 
+- Phase 1A: 90 minutes
+- Phase 1B: 45 minutes
 Total = 135 Minutes
 
-**What I Built:**
->>> Phase 1A
+**WHAT I BUILT:**
+Phase 1A
 - Patient data generator script (generate_patients.py)
 - 500 synthetic patients with realistic medical conditions
 - Clinical notes for each patient
 - CSV export with readmission labels
->>> Phase 1B
+Phase 1B
 - Data analysis script (analyze_data.py)
 - 3 professional data visualization charts
 - Statistical analysis of patient population
 
-**Results:**
->>> Phase 1A
+**RESULTS:**
+Phase 1A
 - Readmission rate: 51.2%
 - Average risk score: 63.4
 - Average length of stay: 10.3 days
 - Medical conditions: Heart failure, diabetes, kidney disease, COPD
->>> Phase 1B
+Phase 1B
 - Youngest patient: 18 years
 - Oldest patient: 95 years
 
-**Screenshots:**
->>> Phase 1A:
+*SCREENSHOTS:*
+
+Phase 1A:
 ![Phase1-1](screenshots/Phase01/Phase01_01_generate_output.png)
+
 *Patient generation output showing statistics*
 
 ![Phase1-2](screenshots/Phase01/Phase01_02_csv_preview.png)
+
 *CSV preview - first 10 patients*
 
 ![Phase1-3](screenshots/Phase01/Phase01_03_clinical_note.png)
+
 *Sample clinical note for a patient*
 
->>> Phase 1B
+Phase 1B
 ![Phase1-4](screenshots/Phase01/Phase01_04_age_distribution.png)
+
 *Age distribution chart - most patients are elderly*
 
 ![Phase1-5](screenshots/Phase01/Phase01_05_readmission_by_age.png)
+
 *Readmission rate increases significantly with age*
 
 ![Phase1-6](screenshots/Phase01/Phase01_06_risk_factors.png)
+
 *Heart failure has the highest impact on readmission risk*
 
 ![Phase1-7](screenshots/Phase01/Phase01_07_stats_output.png)
+
 *Terminal output showing statistics*
 
 ![Phase1-8](screenshots/Phase01/Phase01_08_complete_message.png)
+
 *Day 3 analysis complete confirmation*
 
 **Key Learning:** 
->>> Phase 1A
+- Phase 1A
 Heart failure and prior hospitalizations are the strongest risk factors for readmission.
->>> Phase 1B
+- Phase 1B
 Understanding your data before building AI is crucial. The charts revealed that age and heart failure are the strongest predictors of readmission.
