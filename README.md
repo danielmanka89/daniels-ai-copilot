@@ -2,11 +2,11 @@
 
 ### Real-Time Patient Risk Intelligence System
 
-**Built by Daniel** | **Status: Phase 1 Complete** | **20-Day Journey**
+**Built by Daniel** | **Status: Phase 2 Complete** | **20-Day Journey**
 
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Phase 1](https://img.shields.io/badge/Phase-1_Data_Complete-green.svg)]()
+[![Phase 2](https://img.shields.io/badge/Phase-2_ML_Model-green.svg)]()
 
 ---
 
@@ -81,18 +81,24 @@ This is not a demo. This is a production-architecture solution to one of the mos
 
 ## PROJECT PROGRESS TRACKER
 
-### 8 Phases - Overall Progress: ████░░░░░░░░░░░░░░░░ 25%
+### 8 Phases - Overall Progress: ██████░░░░░░░░░░░░░░ 37.5%
 
 | Phase | Name | Status | Progress |
 |-------|------|--------|----------|
 | 0 | Setup & Environment | COMPLETE | 100% |
 | 1 | Data Foundation | COMPLETE | 100% |
-| 2 | Risk Prediction Model | PENDING | 0% |
+| 2 | Risk Prediction Model | COMPLETE | 100% |
 | 3 | Knowledge Base | PENDING | 0% |
 | 4 | AI Language Model | PENDING | 0% |
 | 5 | RAG System | PENDING | 0% |
 | 6 | Web Interface | PENDING | 0% |
 | 7 | GitHub & Documentation | PENDING | 0% |
+
+| Phase | What I Did | Time | Status |
+|-------|------------|------|--------|
+| 0 | Environment setup, Python 3.11, 7 packages | 130 min | ✅ |
+| 1 | Generated 500 patients, created 8 charts | 135 min | ✅ |
+| 2 | Trained ML model with 54% accuracy | 60 min | ✅ |
 
 ---
 
@@ -134,7 +140,9 @@ This is not a demo. This is a production-architecture solution to one of the mos
 
 ---
 
+### --------------------------------------------------
 ### Phase 1: Data Foundation (COMPLETE)
+### --------------------------------------------------
 
 **TIME SPENT:** 
 - Phase 1A: 90 minutes
@@ -209,3 +217,41 @@ Total = 135 Minutes
 Heart failure and prior hospitalizations are the strongest risk factors for readmission.
 - Phase 1B
 Understanding your data before building AI is crucial. The charts revealed that age and heart failure are the strongest predictors of readmission.
+
+### --------------------------------------------------
+### Phase 2: Risk Prediction Model (COMPLETE)
+### --------------------------------------------------
+
+**Time Spent:** 60 minutes
+
+**Status:** ✅ DONE
+
+**What I Built:**
+- Machine learning model trainer (train_model.py)
+- Random Forest classifier for readmission prediction
+- Model saved as risk_model.pkl
+- Feature importance chart
+
+**Model Performance:**
+| Metric | Score |
+|--------|-------|
+| Accuracy | 54.0% |
+| Features used | 7 (age, conditions, hospital history) |
+| Training set | 400 patients |
+| Testing set | 100 patients |
+
+**Feature Importance (What Matters Most):**
+1. Prior hospitalizations
+2. Length of stay
+3. Age
+4. Heart failure
+
+**Screenshots:**
+![Phase2-1](screenshots/Phase02/Phase02_01_feature_importance.png)
+*Feature importance chart - shows what predicts readmission best*
+
+![Phase2-2](screenshots/Phase02/Phase02_02_training_output.png)
+*Model training output with accuracy score*
+
+**Key Learning:** Prior hospitalizations matter more than any medical condition for predicting readmission. Next step is improving accuracy from 54% to 80%+.
+
