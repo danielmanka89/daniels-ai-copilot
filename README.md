@@ -142,29 +142,34 @@ This is not a demo. This is a production-architecture solution to one of the mos
 Total = 135 Minutes
 
 **WHAT I BUILT:**
-Phase 1A
+
+*Phase 1A*
 - Patient data generator script (generate_patients.py)
 - 500 synthetic patients with realistic medical conditions
 - Clinical notes for each patient
 - CSV export with readmission labels
-Phase 1B
+
+*Phase 1B*
 - Data analysis script (analyze_data.py)
 - 3 professional data visualization charts
 - Statistical analysis of patient population
 
 **RESULTS:**
-Phase 1A
+
+*Phase 1A*
 - Readmission rate: 51.2%
 - Average risk score: 63.4
 - Average length of stay: 10.3 days
 - Medical conditions: Heart failure, diabetes, kidney disease, COPD
-Phase 1B
+
+*Phase 1B*
 - Youngest patient: 18 years
 - Oldest patient: 95 years
 
-*SCREENSHOTS:*
+**SCREENSHOTS:**
 
-Phase 1A:
+*Phase 1A Screenshots*
+
 ![Phase1-1](screenshots/Phase01/Phase01_01_generate_output.png)
 
 *Patient generation output showing statistics*
@@ -177,7 +182,8 @@ Phase 1A:
 
 *Sample clinical note for a patient*
 
-Phase 1B
+*Phase 1B Screenshots*
+
 ![Phase1-4](screenshots/Phase01/Phase01_04_age_distribution.png)
 
 *Age distribution chart - most patients are elderly*
