@@ -2,11 +2,11 @@
 
 ### Real-Time Patient Risk Intelligence System
 
-**Built by Daniel** | **Status: Phase 2 Complete** | **20-Day Journey**
+**Built by Daniel** | **Status: Phase 3 Complete** | **20-Day Journey**
 
 [![Python 3.11](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Phase 2](https://img.shields.io/badge/Phase-2_ML_Model-green.svg)]()
+[![Phase 3](https://img.shields.io/badge/Phase-3_Knowledge_Base-green.svg)]()
 
 ---
 
