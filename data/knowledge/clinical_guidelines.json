@@ -1,0 +1,74 @@
+{
+  "heart_failure": {
+    "title": "Heart Failure Management Guidelines",
+    "source": "American Heart Association, 2024",
+    "readmission_risk": "High (22% 30-day readmission rate)",
+    "key_points": [
+      "Monitor daily weights - weight gain >2-3 lbs in 24h indicates fluid retention",
+      "Check for shortness of breath, especially when lying flat",
+      "Verify discharge medications: ACE inhibitors, beta-blockers, diuretics",
+      "Schedule follow-up within 7 days of discharge",
+      "Educate patient on low sodium diet (<2000mg/day)"
+    ],
+    "red_flags": [
+      "Sudden weight gain",
+      "Increased shortness of breath",
+      "Swelling in legs or feet",
+      "Chest pain"
+    ]
+  },
+  "copd": {
+    "title": "COPD Exacerbation Management",
+    "source": "Global Initiative for Chronic Obstructive Lung Disease, 2024",
+    "readmission_risk": "High (19% 30-day readmission rate)",
+    "key_points": [
+      "Confirm inhaler technique before discharge",
+      "Complete oral steroid course (typically 5-7 days)",
+      "Consider home oxygen assessment if O2 <88%",
+      "Smoking cessation counseling offered",
+      "Pulmonary rehab referral within 4 weeks"
+    ],
+    "red_flags": [
+      "Worsening shortness of breath",
+      "Increased cough or sputum",
+      "Fever",
+      "Confusion or drowsiness"
+    ]
+  },
+  "pneumonia": {
+    "title": "Community-Acquired Pneumonia Guidelines",
+    "source": "Infectious Disease Society of America, 2023",
+    "readmission_risk": "Moderate (16% 30-day readmission rate)",
+    "key_points": [
+      "Ensure oxygen saturation >90% before discharge",
+      "Verify patient can tolerate oral antibiotics",
+      "Check temperature normal for 24 hours",
+      "Assess ability to perform activities of daily living",
+      "Schedule follow-up chest X-ray in 4-6 weeks"
+    ],
+    "red_flags": [
+      "Fever returning after being normal",
+      "Difficulty breathing",
+      "Chest pain",
+      "Confusion"
+    ]
+  },
+  "general": {
+    "title": "General Hospital Readmission Prevention",
+    "source": "CMS Hospital Readmission Reduction Program",
+    "readmission_risk": "Baseline",
+    "key_points": [
+      "Complete medication reconciliation at discharge",
+      "Send discharge summary to primary care within 48 hours",
+      "Call patient within 48 hours of discharge",
+      "Schedule follow-up appointment before patient leaves hospital",
+      "Assess health literacy and provide written instructions"
+    ],
+    "red_flags": [
+      "Any new symptoms",
+      "Medication side effects",
+      "Difficulty keeping follow-up appointments",
+      "Lack of social support"
+    ]
+  }
+}
