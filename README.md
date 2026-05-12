@@ -81,7 +81,7 @@ This is not a demo. This is a production-architecture solution to one of the mos
 
 ## PROJECT PROGRESS TRACKER
 
-### 8 Phases - Overall Progress: ████████░░░░░░░░░░░░ 50%
+### 8 Phases - Overall Progress: ██████████░░░░░░░░░░ 62.5%
 
 | Phase | Name | Status | Progress |
 |-------|------|--------|----------|
@@ -96,10 +96,11 @@ This is not a demo. This is a production-architecture solution to one of the mos
 
 | Phase | What I Did | Time | Status |
 |-------|------------|------|--------|
-| 0 | Environment setup, Python 3.11, 7 packages | 130 min | ✅ |
-| 1 | Generated 500 patients, created 8 charts | 135 min | ✅ |
-| 2 | Trained ML model with 54% accuracy | 60 min | ✅ |
-| 3 | Knowledge Base with clinical guidelines for heart failure, COPD, pneumonia | 50 min | ✅ (Ready for Phase 4) |
+| 0 | Environment setup, Python 3.11, 7 packages | 130 min |
+| 1 | Generated 500 patients, created 8 charts | 135 min |
+| 2 | Trained ML model with 54% accuracy | 60 min |
+| 3 | Knowledge Base with clinical guidelines for heart failure, COPD, pneumonia | 50 min |
+| 4 | GPT Connector for clinical summaries, ICD-10 coding, symptom flagging | 85 min |
 
 ---
 
@@ -225,7 +226,7 @@ Understanding your data before building AI is crucial. The charts revealed that 
 
 **Time Spent:** 60 minutes
 
-**Status:** ✅ DONE
+**Status:** DONE
 
 **What I Built:**
 - Machine learning model trainer (train_model.py)
@@ -262,7 +263,7 @@ Understanding your data before building AI is crucial. The charts revealed that 
 
 **Time Spent:** 50 minutes
 
-**Status:** ✅ DONE
+**Status:** DONE
 
 **What I Built:**
 - Medical guidelines JSON file (clinical_guidelines.json)
@@ -294,3 +295,36 @@ Understanding your data before building AI is crucial. The charts revealed that 
 *Knowledge base test output showing heart failure guidelines*
 
 **Key Learning:** Structured medical knowledge is essential for RAG systems. JSON format allows easy searching and retrieval. Different conditions have different readmission risk profiles.
+
+### --------------------------------------------------
+### Phase 4: AI Language Model (COMPLETE)
+### --------------------------------------------------
+
+**Time Spent:** 85 minutes
+
+**Status:** DONE
+
+**What I Built:**
+- GPT connector script (gpt_connector.py)
+- Clinical note summarizer
+- ICD-10 code suggester
+- Critical symptom flagger
+- .env file for secure API key storage
+
+**GPT Capabilities:**
+
+| Feature | Function | Use Case |
+|---------|----------|----------|
+| Clinical Summary | 3-4 sentence summary | Quick patient overview |
+| ICD-10 Coding | 2-3 code suggestions | Diagnosis coding assistance |
+| Symptom Flagging | Critical red flags | Patient safety alerts |
+
+**Screenshots:**
+
+![Phase4-1](screenshots/Phase04/Phase04_01_gpt_test.png)
+*GPT test output showing clinical summary, ICD-10 codes, and critical symptoms*
+
+![Phase4-2](screenshots/Phase04/Phase04_02_env_file.png)
+*.env file for secure API key storage (key blurred)*
+
+**Key Learning:** GPT-3.5-turbo is cost-effective for clinical tasks. Proper prompt engineering is essential for accurate medical responses. Never commit API keys to GitHub.
