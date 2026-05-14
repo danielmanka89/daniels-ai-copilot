@@ -81,7 +81,7 @@ This is not a demo. This is a production-architecture solution to one of the mos
 
 ## PROJECT PROGRESS TRACKER
 
-### 8 Phases - Overall Progress: ██████████░░░░░░░░░░ 62.5%
+### 8 Phases - Overall Progress: ████████████░░░░░░░░ 75%
 
 | Phase | Name | Status | Progress |
 |-------|------|--------|----------|
@@ -101,6 +101,7 @@ This is not a demo. This is a production-architecture solution to one of the mos
 | 2 | Trained ML model with 54% accuracy | 60 min |
 | 3 | Knowledge Base with clinical guidelines for heart failure, COPD, pneumonia | 50 min |
 | 4 | GPT Connector for clinical summaries, ICD-10 coding, symptom flagging | 85 min |
+| 5 | RAG System with retrieval-augmented generation and citations | 35 min |
 
 ---
 
@@ -328,3 +329,52 @@ Understanding your data before building AI is crucial. The charts revealed that 
 *.env file for secure API key storage (key blurred)*
 
 **Key Learning:** GPT-3.5-turbo is cost-effective for clinical tasks. Proper prompt engineering is essential for accurate medical responses. Never commit API keys to GitHub.
+
+### --------------------------------------------------
+### Phase 5: RAG System (COMPLETE)
+### --------------------------------------------------
+
+**Time Spent:** 35 minutes
+
+**Status:** DONE
+
+**What I Built:**
+- RAG system script (rag_system.py)
+- Retrieval-augmented generation pipeline
+- Condition detection from clinical notes
+- Automatic guideline retrieval
+- Cited responses with sources
+
+**How RAG Works:**
+
+| Step | Action |
+|------|--------|
+| 1 | Read patient note |
+| 2 | Detect condition (heart failure, COPD, pneumonia) |
+| 3 | Retrieve relevant guidelines from knowledge base |
+| 4 | Generate response with citations |
+
+**Test Results:**
+
+| Condition | Source Used | Citation Included |
+|-----------|-------------|-------------------|
+| Heart Failure | American Heart Association | Yes |
+| COPD | GOLD Guidelines | Yes |
+| Pneumonia | IDSA | Yes |
+
+**Screenshots:**
+
+![Phase5-1](screenshots/Phase05/Phase05_01_rag_test.png)
+*RAG system response for heart failure patient with citation*
+
+![Phase5-2](screenshots/Phase05/Phase05_02_pneumonia_test.png)
+*RAG system response for pneumonia patient*
+
+![Phase5-3](screenshots/Phase05/Phase05_03_code_overview.png)
+*RAG system code showing retrieve and generate functions*
+
+![Phase5-4](screenshots/Phase05/Phase05_04_knowledge_base.png)
+*Knowledge base JSON structure used for retrieval*
+
+**Key Learning:** Retrieval-augmented generation ensures every answer is grounded in real medical guidelines. Citations make the system trustworthy and auditable.
+
